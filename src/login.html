@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="zh-CN" class="login-page">
 
 <head>
     <meta charset="utf-8">
@@ -19,23 +19,49 @@
     <![endif]-->
 </head>
 
-<body>
-    <div class="container-fluid login">
+<body class="login">
+    <div class="container-fluid">
         <div class="cont">
-            <div style=" width:100%;overflow:hidden;">
-                <div style=" width:1600px; height:600px; position:relative; left:50%; ">
-                    <div style="width:1600px;  position:relative; z-index:2; left:-50%;">
-                        <div class="cc">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <a href="#"><img src="/images/login.png" alt=""></a>
+            <div class="cc">
+                <div class="row nav">
+                    <div class="col-md-4 col-xs-12 logo">
+                        <a href="#"><img src="/images/login.png" alt=""></a>
+                    </div>
+                    <div class="col-md-8 visible-md-block visible-lg-block text-right">
+                        <a href="#"><img src="/images/entre.png" alt=""></a>
+                        <a href="#" class="open">开设模拟账户</a>
+                        <a href="#">Phone +61 2 9099 4288</a>
+                        <div><span class="on">中文</span> | <span>English</span></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-xs-12">
+                        <from>
+                            <div class="login-from">
+                                <div class="form-group">
+                                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="邮箱/用户名">
                                 </div>
-                                <div class="col-md-8 text-right">
-                                    <a href="#"><img src="/images/entre.png" alt=""></a>
+                                <div class="form-group">
+                                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="密码">
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"> 记住密码
+                                    </label>
+                                </div>
+                                <button type="submit" class="btn btn-submit"></button>
+                                <div class="form-group register">
+                                    <div class="pull-left">
+                                        <a href="#">注册</a>
+                                    </div>
+                                    <div class="pull-right">
+                                        <a href="#">忘记密码</a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        </from>
                     </div>
+                    <div class="col-md-6 col-xs-12"></div>
                 </div>
             </div>
         </div>
