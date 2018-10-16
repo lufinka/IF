@@ -57,3 +57,34 @@
 a:hover{
     text-decoration: none;
 }
+.c1{
+    color: #f65144;
+    &.link{
+        &:hover{
+            color: #f65144;
+        }
+    }
+}
+.c2{
+    color: #44f674;
+    &.link{
+        &:hover{
+            color: #44f674;
+        }
+    }
+}
+
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn.active.focus {
+    outline: none;          
+}
+
+p,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,form,fieldset,legend,input,select,textarea,button,th,td,menu,article,pre,xmp,plaintext,listing{margin:0;padding:0;}
+pre,xmp,plaintext,listing{white-space:normal;}
+article,aside,dialog,figure,footer,header,hgroup,nav,section,select,time{display:block;}
+h1,h2,h3,h4,h5,h6,input,select,button,label{font-size:100%;font-weight:100;vertical-align:middle;}
+ul,dl,ol{list-style:none;}
