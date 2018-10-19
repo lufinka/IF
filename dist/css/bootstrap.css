@@ -1423,7 +1423,7 @@ html
 }
 body
 {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'Microsoft Yahei', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 14px;
     line-height: 1.42857143;
 
@@ -7808,7 +7808,7 @@ button.close
 }
 .tooltip
 {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'Microsoft Yahei', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 12px;
     font-weight: normal;
     font-style: normal;
@@ -7964,7 +7964,7 @@ button.close
 }
 .popover
 {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'Microsoft Yahei', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 14px;
     font-weight: normal;
     font-style: normal;
