@@ -75,6 +75,7 @@
     .section1 {
         background-image: url(/images/homebg1.jpg);
         background-position: center top;
+        height: 1091px;
         background-repeat: no-repeat;
     }
 
@@ -413,16 +414,19 @@
                     padding: 5px;
                     background-color: #fff;
                     box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+
                     .cont {
                         width: 100%;
                         height: 100%;
                         position: relative;
-                        img{
+
+                        img {
                             width: 100%;
                             height: 100%;
                             display: block;
                         }
-                        i{
+
+                        i {
                             width: 8px;
                             height: 9px;
                             position: absolute;
@@ -438,65 +442,273 @@
             }
         }
     }
-    
-    .banner{
+
+    .banner {
         max-width: 1660px;
         margin: 0 auto;
         padding-top: 112px;
-        .chart{
+
+        .mb {
+            h2 {
+                font-size: 30px;
+                color: #fff;
+            }
+
+            h3 {
+                margin-top: 10px;
+                font-size: 28px;
+                color: #999;
+            }
+
+            p {
+                margin-top: 10px;
+                font-size: 10px;
+                color: #fff;
+                line-height: 24px;
+                padding-bottom: 20px;
+            }
+        }
+
+        .chart {
             width: 718px;
-            li{
+            padding-bottom: 94px;
+            background-image: url(/images/sbg.png);
+            background-size: 100% auto;
+            background-position: bottom;
+            background-repeat: no-repeat;
+
+            li {
                 margin: 0 4px 4px 0;
                 width: 355px;
                 height: 213px;
                 float: left;
                 background-repeat: no-repeat;
                 background-size: 100% auto;
-                &.down{
+
+                &.down {
                     background-image: url(/images/duwn.png);
                     color: #44f674;
-                    .n{
+
+                    .n {
                         color: #0f6b28;
                     }
                 }
-                &.up{
+
+                &.up {
                     color: #f65144;
                     background-image: url(/images/up.png);
-                    .n{
+
+                    .n {
                         color: #6b0f0f;
                     }
                 }
-                .n{
+
+                .n {
                     text-align: right;
                     padding-right: 30px;
                     font-size: 24px;
                 }
-                small{
+
+                small {
                     color: #ccc;
                     display: block;
                     font-size: 22px;
                     margin-top: 26px;
                     padding-left: 100px;
                 }
-                .data{
+
+                .data {
                     padding-top: 64px;
                     font-weight: normal;
                     line-height: 42px;
                     font-size: 62px;
-                    font-family:sans-serif;
-                    b{
+                    font-family: sans-serif;
+
+                    b {
                         font-size: 35px;
                     }
-                    i{ float: right;
+
+                    i {
+                        float: right;
                         font-style: normal;
                         line-height: .2;
-                       font-size: 35px; 
+                        font-size: 35px;
                     }
-                    .pull-left{
+
+                    .pull-left {
                         padding-left: 10px;
                     }
-                    .pull-right{
+
+                    .pull-right {
                         padding-right: 10px;
+                    }
+                }
+            }
+        }
+
+        .welcome {
+            h2 {
+                margin-top: 20px;
+                font-size: 60px;
+                color: #fff;
+            }
+
+            h3 {
+                margin-top: 15px;
+                font-size: 56px;
+                color: #999;
+            }
+
+            p {
+                margin-top: 20px;
+                font-size: 18px;
+                color: #fff;
+                line-height: 28px;
+            }
+
+            .row {
+                margin-top: 40px;
+
+                .open1 {
+                    margin-bottom: 30px;
+                    display: inline-block;
+                    text-align: center;
+                    line-height: 98px;
+                    width: 286px;
+                    height: 98px;
+                    border-radius: 98px;
+                    background-color: #fc2235;
+                    color: #fff;
+                    font-size: 26px;
+                    transition: all .218s;
+                    background-size: 100% auto;
+                    &:hover,&:active{
+                        background-image: url(/images/open1.png);
+                        background-repeat: no-repeat;
+                    }
+                }
+
+                .open2 {
+                    display: inline-block;
+                    margin-left: 23px;
+                    text-align: center;
+                    line-height: 92px;
+                    width: 282px;
+                    height: 94px;
+                    border-radius: 94px;
+                    background-color: rgba(0, 0, 0, 0);
+                    border: 2px solid #fff;
+                    color: #fff;
+                    font-size: 26px;
+                    transition: all .218s;
+                    background-size: 100% auto;
+                    &:hover,&:active{
+                        border: none;
+                        height: 98px;
+                        line-height: 98px;
+                        background-image: url(/images/open2.png);
+                        background-repeat: no-repeat;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .home {
+        .banner {
+            .chart {
+                padding-bottom: 30px;
+                background: none;
+                width: 100%;
+
+                li {
+                    width: 50%;
+                    margin: 0;
+                    height: 105px;
+                    .n {
+                        font-size: 12px;
+                        padding-right: 15px;
+                    }
+
+                    .data {
+                        padding-top: 32px;
+                        font-weight: normal;
+                        line-height: 21px;
+                        font-size: 31px;
+                        font-family: sans-serif;
+
+                        b {
+                            font-size: 17px;
+                        }
+
+                        i {
+                            float: right;
+                            font-style: normal;
+                            line-height: .2;
+                            font-size: 17px;
+                        }
+
+                        .pull-left {
+                            padding-left: 5px;
+                        }
+
+                        .pull-right {
+                            padding-right: 5px;
+                        }
+                    }
+
+                    small {
+                        color: #ccc;
+                        display: block;
+                        font-size: 11px;
+                        margin-top: 10px;
+                        padding-left: 50px;
+                    }
+                }
+            }
+
+            .welcome {
+                .row {
+                    margin-top: 0;
+                    display: flex;
+                    align-content: center;
+                    justify-content: center;
+                    .open1 {
+                        margin-bottom: 0px;
+                        display: block;
+                        text-align: center;
+                        line-height: 49px;
+                        width: 143px;
+                        height: 49px;
+                        border-radius: 49px;
+                        background-color: #fc2235;
+                        color: #fff;
+                        font-size: 13px;
+                        transition: all .218s;
+                    }
+
+                    .open2 {
+                        display: block;
+                        margin-left: 20px;
+                        text-align: center;
+                        line-height: 47px;
+                        width: 141px;
+                        height: 47px;
+                        border-radius: 47px;
+                        background-color: rgba(0, 0, 0, 0);
+                        border: 2px solid #fff;
+                        color: #fff;
+                        font-size: 13px;
+                        transition: all .218s;
+                        &:hover,&:active{
+                        border: none;
+                        height: 49px;
+                        line-height: 49px;
+                        background-image: url(/images/open2.png);
+                        background-repeat: no-repeat;
+                    }
                     }
                 }
             }

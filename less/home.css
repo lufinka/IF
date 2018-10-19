@@ -65,6 +65,7 @@
 .home .section1 {
   background-image: url(/images/homebg1.jpg);
   background-position: center top;
+  height: 1091px;
   background-repeat: no-repeat;
 }
 .home .menu {
@@ -362,8 +363,29 @@
   margin: 0 auto;
   padding-top: 112px;
 }
+.home .banner .mb h2 {
+  font-size: 30px;
+  color: #fff;
+}
+.home .banner .mb h3 {
+  margin-top: 10px;
+  font-size: 28px;
+  color: #999;
+}
+.home .banner .mb p {
+  margin-top: 10px;
+  font-size: 10px;
+  color: #fff;
+  line-height: 24px;
+  padding-bottom: 20px;
+}
 .home .banner .chart {
   width: 718px;
+  padding-bottom: 94px;
+  background-image: url(/images/sbg.png);
+  background-size: 100% auto;
+  background-position: bottom;
+  background-repeat: no-repeat;
 }
 .home .banner .chart li {
   margin: 0 4px 4px 0;
@@ -420,4 +442,151 @@
 }
 .home .banner .chart li .data .pull-right {
   padding-right: 10px;
+}
+.home .banner .welcome h2 {
+  margin-top: 20px;
+  font-size: 60px;
+  color: #fff;
+}
+.home .banner .welcome h3 {
+  margin-top: 15px;
+  font-size: 56px;
+  color: #999;
+}
+.home .banner .welcome p {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #fff;
+  line-height: 28px;
+}
+.home .banner .welcome .row {
+  margin-top: 40px;
+}
+.home .banner .welcome .row .open1 {
+  margin-bottom: 30px;
+  display: inline-block;
+  text-align: center;
+  line-height: 98px;
+  width: 286px;
+  height: 98px;
+  border-radius: 98px;
+  background-color: #fc2235;
+  color: #fff;
+  font-size: 26px;
+  transition: all .218s;
+  background-size: 100% auto;
+}
+.home .banner .welcome .row .open1:hover,
+.home .banner .welcome .row .open1:active {
+  background-image: url(/images/open1.png);
+  background-repeat: no-repeat;
+}
+.home .banner .welcome .row .open2 {
+  display: inline-block;
+  margin-left: 23px;
+  text-align: center;
+  line-height: 92px;
+  width: 282px;
+  height: 94px;
+  border-radius: 94px;
+  background-color: rgba(0, 0, 0, 0);
+  border: 2px solid #fff;
+  color: #fff;
+  font-size: 26px;
+  transition: all .218s;
+  background-size: 100% auto;
+}
+.home .banner .welcome .row .open2:hover,
+.home .banner .welcome .row .open2:active {
+  border: none;
+  height: 98px;
+  line-height: 98px;
+  background-image: url(/images/open2.png);
+  background-repeat: no-repeat;
+}
+@media (max-width: 767px) {
+  .home .banner .chart {
+    padding-bottom: 30px;
+    background: none;
+    width: 100%;
+  }
+  .home .banner .chart li {
+    width: 50%;
+    margin: 0;
+    height: 105px;
+  }
+  .home .banner .chart li .n {
+    font-size: 12px;
+    padding-right: 15px;
+  }
+  .home .banner .chart li .data {
+    padding-top: 32px;
+    font-weight: normal;
+    line-height: 21px;
+    font-size: 31px;
+    font-family: sans-serif;
+  }
+  .home .banner .chart li .data b {
+    font-size: 17px;
+  }
+  .home .banner .chart li .data i {
+    float: right;
+    font-style: normal;
+    line-height: .2;
+    font-size: 17px;
+  }
+  .home .banner .chart li .data .pull-left {
+    padding-left: 5px;
+  }
+  .home .banner .chart li .data .pull-right {
+    padding-right: 5px;
+  }
+  .home .banner .chart li small {
+    color: #ccc;
+    display: block;
+    font-size: 11px;
+    margin-top: 10px;
+    padding-left: 50px;
+  }
+  .home .banner .welcome .row {
+    margin-top: 0;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  }
+  .home .banner .welcome .row .open1 {
+    margin-bottom: 0px;
+    display: block;
+    text-align: center;
+    line-height: 49px;
+    width: 143px;
+    height: 49px;
+    border-radius: 49px;
+    background-color: #fc2235;
+    color: #fff;
+    font-size: 13px;
+    transition: all .218s;
+  }
+  .home .banner .welcome .row .open2 {
+    display: block;
+    margin-left: 20px;
+    text-align: center;
+    line-height: 47px;
+    width: 141px;
+    height: 47px;
+    border-radius: 47px;
+    background-color: rgba(0, 0, 0, 0);
+    border: 2px solid #fff;
+    color: #fff;
+    font-size: 13px;
+    transition: all .218s;
+  }
+  .home .banner .welcome .row .open2:hover,
+  .home .banner .welcome .row .open2:active {
+    border: none;
+    height: 49px;
+    line-height: 49px;
+    background-image: url(/images/open2.png);
+    background-repeat: no-repeat;
+  }
 }
