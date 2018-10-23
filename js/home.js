@@ -1,5 +1,23 @@
 + function ($) {
     var index = 0;
+    var cxSlideApi;
+
+    $('#cxslide_x').cxSlide({
+        auto: true,
+        plus: true,
+        minus: true
+    }, function (api) {
+        cxSlideApi = api;
+    });
+
+    $('.stop').click(function () {
+        cxSlideApi.stop();
+    });
+    $('.minus,.plus').click(function () {
+        cxSlideApi.play();
+    });
+
+
     $('.switch').hover(function () {
         $(this).addClass('on');
         $('.cont', this).stop().slideDown();
@@ -53,17 +71,19 @@
     });
 
     $('.hamburger').click(function () {
-        if (!$(this).hasClass('is-active')) {
-            $(this).addClass('is-active');
-            $(this).parents('.smenu').addClass('active');
-            $(this).parents('.smenu').find('.sm-cont').stop().slideDown();
-        } else {
-            $(this).removeClass('is-active');
-            $(this).parents('.smenu').find('.sm-cont').stop().slideUp(function () {
-                $(this).parents('.smenu').removeClass('active');
+        var self = this;
+        if ($(self).hasClass('is-active')) {
+            $(self).removeClass('is-active');
+            $(self).parents('.smenu').find('.sm-cont').stop().slideUp(function () {
+                $(self).parents('.smenu').removeClass('active');
             });
+        } else {
+            $(self).addClass('is-active');
+            $(self).parents('.smenu').addClass('active');
+            $(self).parents('.smenu').find('.sm-cont').stop().slideDown();
         }
     });
+
     $('.sm-box li').click(function () {
         if (!$(this).hasClass('active')) {
             $('.smnav', this).stop().slideDown();
@@ -71,5 +91,17 @@
             $(this).addClass('active').siblings().removeClass('active');
         }
     });
-
+//
+//    $('.tool a').on('mousedown', function (e) {
+//        console.log(e);
+//        var sx = e.pageX;
+//        $(this).on('mousemove', function (e) {
+//            if (Math.abs(e.pageX - sx) < 15) {
+//                $(this).css("transform", "translateX(" + (e.pageX - sx) + "px)");
+//            }
+//        });
+//        $(this).on('mouseup', function (e) {
+//            $(this).css("transform", "translateX(0px)");
+//        });
+//    })
 }(jQuery);
