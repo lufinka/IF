@@ -1354,12 +1354,81 @@
 
     .news {
         padding-top: 134px;
-        .tabs{
-           overflow: hidden;
-            li{
-                width: 74px;
+
+        .tabs {
+            overflow: hidden;
+            margin-top: 50px;
+
+            li {
+                width: 174px;
+                text-align: center;
+                float: left;
+                height: 82px;
+                line-height: 62px;
+                background-image: url(/images/s56.gif);
+                background-size: 100% auto;
+                color: #fff;
+                font-size: 28px;
+                margin-right: 40px;
+                background-repeat: repeat-x;
+                cursor: pointer;
+
+                &.active {
+                    background-image: url(/images/s55.gif);
+                    background-repeat: no-repeat;
+                    background-size: 100% auto;
+                    background-position: center bottom;
+                }
             }
         }
+
+        .tb-cont {
+            margin-top: 35px;
+
+            dt {
+                padding-bottom: 25px;
+                font-size: 24px;
+                line-height: 36px;
+            }
+
+            dd {
+                line-height: 30px;
+            }
+
+            a {
+                display: block;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                font-size: 20px;
+                color: #999;
+
+                span {
+                    color: #f02e35;
+                    padding-right: 15px;
+                }
+            }
+
+            .more {
+                display: block;
+                background-color: #fc2235;
+                font-size: 26px;
+                color: #fff;
+                text-align: center;
+                height: 90px;
+                line-height: 90px;
+                width: 270px;
+                border-radius: 90px;
+                margin-top: 45px;
+
+                &:hover,
+                &:active {
+                    background-color: #ff0016;
+                    text-decoration: none;
+                }
+            }
+        }
+
         .bg {
             margin-top: 57px;
             background-image: url(/images/s51.png);
@@ -1681,6 +1750,69 @@
                         p {
                             font-size: 12px;
                         }
+                    }
+                }
+            }
+        }
+
+        .news {
+            padding-top: 134px;
+
+            .tabs {
+                text-align: center;
+                overflow: hidden;
+                margin-top: 50px;
+
+                li {
+                    width: 90px;
+                    text-align: center;
+                    float: inherit;
+                    display: inline-block;
+                    height: 40px;
+                    line-height: 32px;
+                    color: #fff;
+                    font-size: 18px;
+                    margin: 0 10px;
+                    background-repeat: repeat-x;
+                    cursor: pointer;
+                }
+            }
+
+            .tb-cont {
+                margin-top: 35px;
+
+                dt {
+                    padding-bottom: 20px;
+                    font-size: 18px;
+                    line-height: 24px;
+                }
+
+                dd {
+                    line-height: 24px;
+                }
+
+                a {
+                    font-size: 13px;
+                    color: #999;
+                }
+
+                .more {
+                    display: block;
+                    background-color: #fc2235;
+                    font-size: 18px;
+                    color: #fff;
+                    text-align: center;
+                    height: 45px;
+                    line-height: 45px;
+                    width: 135px;
+                    border-radius: 45px;
+                    margin: 0 auto;
+                    margin-top: 20px;
+
+                    &:hover,
+                    &:active {
+                        background-color: #ff0016;
+                        text-decoration: none;
                     }
                 }
             }

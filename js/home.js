@@ -91,6 +91,10 @@
             $(this).addClass('active').siblings().removeClass('active');
         }
     });
+    
+     $('.tabs li').click(function () {
+         var i = $(this).index();
+     });
 //
 //    $('.tool a').on('mousedown', function (e) {
 //        console.log(e);
