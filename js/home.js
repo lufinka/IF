@@ -94,6 +94,10 @@
     
      $('.tabs li').click(function () {
          var i = $(this).index();
+         if(!$(this).hasClass('active')){
+             $(this).addClass('active').siblings().removeClass('active');
+             $('.tb-cont list').eq(i).show().siblings().hide();
+         }
      });
 //
 //    $('.tool a').on('mousedown', function (e) {
