@@ -1423,7 +1423,7 @@ html
 }
 body
 {
-    font-family: 'Microsoft Yahei', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'light', 'Microsoft Yahei', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 14px;
     line-height: 1.42857143;
 
@@ -7808,7 +7808,7 @@ button.close
 }
 .tooltip
 {
-    font-family: 'Microsoft Yahei', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'light', 'Microsoft Yahei', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 12px;
     font-weight: normal;
     font-style: normal;
@@ -7964,7 +7964,7 @@ button.close
 }
 .popover
 {
-    font-family: 'Microsoft Yahei', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'light', 'Microsoft Yahei', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 14px;
     font-weight: normal;
     font-style: normal;
@@ -9287,6 +9287,12 @@ ol
 {
     -webkit-transform: translate3d(8px, 0, 0) rotate(-45deg) scale(.7, 1);
             transform: translate3d(8px, 0, 0) rotate(-45deg) scale(.7, 1);
+}
+@font-face
+{
+    font-family: light;
+
+    src: url('/foots/PINGFANG-LIGHT.TTF');
 }
 .home .banner
 {
