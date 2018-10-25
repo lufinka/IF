@@ -127,7 +127,7 @@
         .logo {
             width: 324px;
             height: 77px;
-            background-image: url(../images/logo.png);
+            background-image: url(/images/logo.png);
             background-repeat: no-repeat;
         }
 
@@ -157,13 +157,13 @@
         .nav {
             color: #fff;
             font-size: 22px;
-
+            margin-right: 30px;
             li {
                 height: 77px;
                 line-height: 77px;
                 display: block;
                 float: left;
-                padding: 0 26px;
+                padding: 0 20px;
 
                 &.on {
                     a {
@@ -652,8 +652,8 @@
     }
 
     .smenu {
-        &.active {
             background-color: #000;
+        &.active {
             height: 100%;
         }
 
@@ -1606,6 +1606,7 @@
             }
         }
     }
+    
     .foot{
         color: #fff;
         text-align: center;
@@ -1620,7 +1621,6 @@
 @media (max-width: 767px) {
     .home {
         .section {
-
             &.s1,
             &.s2,
             &.s3,

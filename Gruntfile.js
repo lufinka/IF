@@ -111,6 +111,7 @@ module.exports = function (grunt) {
           'js/button.js',
           'js/carousel.js',
           'js/collapse.js',
+          'js/jquery.cxslide.js',
           'js/dropdown.js',
           'js/modal.js',
           'js/tooltip.js',
@@ -118,7 +119,7 @@ module.exports = function (grunt) {
           'js/scrollspy.js',
           'js/tab.js',
           'js/affix.js',
-//          'js/home.js',
+          'js/home.js',
         ],
         dest: 'dist/js/<%= pkg.name %>.js'
       }
