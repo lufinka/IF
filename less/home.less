@@ -1,17 +1,13 @@
-@font-face {
-    font-family: light;
-    src: url('/foots/PINGFANG-LIGHT.TTF');
-}
-
-//@font-face {
-//    font-family: mediumed;
-//    src: url('/foots/PINGFANG-MEDIUM.TTF')，url('/foots/PINGFANG-MEDIUM.eot');
-//}
-//
-//@font-face {
-//    font-family: regular;
-//    src: url('/foots/PINGFANG-REGULAR.TTF')，url('/foots/PINGFANG-REGULAR.eot');
-//}
+html,body{font-family: "SF Pro SC", "HanHei SC", "SF Pro Text", "Myriad Set Pro", "SF Pro Icons", "PingFang SC", "Helvetica Neue", "Helvetica", "Arial", sans-serif;position:relative; background:#fff; -webkit-font-smoothing: antialiased; font-weight:300;}
+body{margin: 0;}
+/*body{height: auto !important;}*/
+.mdl-layout__container{/*height: auto !important;*/ position: relative;}
+@font-face{font-family:"goodbook";src:url('/fonts/goodbook.eot');src:url('/fonts/goodbook.eot?#iefix') format('embedded-opentype'),url('/fonts/goodbook.woff') format('woff'),url('/fonts/goodbook.ttf') format('truetype'); font-weight:normal; font-style:normal;}
+@font-face{font-family:"goodlight";src:url('../resources/fonts/goodlight.eot');src:url('/fonts/goodlight.eot?#iefix') format('embedded-opentype'),url('/fonts/goodlight.woff') format('woff'),url('/fonts/goodbook.ttf') format('truetype'); font-weight:normal; font-style:normal;}
+@font-face {font-family:'Helvetica Neue';src: local("Helvetica Neue Light"), local("HelveticaNeue-Light"), url("/fonts/HelveticaNeue-Light.ttf") format("truetype"), url("/fonts/HelveticaNeue-Light.woff") format("woff");font-weight: 300}
+h1,h2,h3,h4,h5,h6{font-family:"Helvetica Neue","goodbook", "Lucida Grande", "Lucida Sans Unicode" ,Arial, Verdana, sans-serif;font-weight:300;word-wrap: break-word; word-break: break-all;}
+h3{font-size: 32px;font-weight: 400;}
+h5{font-size: 18px;}
 .home {
     .banner {
         max-width: 1400px;
@@ -93,12 +89,14 @@
                     line-height: 42px;
                     font-size: 62px;
                     font-family: sans-serif;
-
+                    text-shadow: 1px 1px 45px;
                     b {
                         font-size: 35px;
+                        text-shadow:  none;
                     }
 
                     i {
+                        text-shadow: none;
                         float: right;
                         font-style: normal;
                         line-height: .2;

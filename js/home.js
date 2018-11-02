@@ -70,7 +70,7 @@
         };
     });
 
-    $('.hamburger').click(function () {
+    $('.hamburger-box').click(function () {
         var self = this;
         if ($(self).hasClass('is-active')) {
             $(self).removeClass('is-active');
@@ -91,25 +91,65 @@
             $(this).addClass('active').siblings().removeClass('active');
         }
     });
-    
-     $('.tabs li').click(function () {
-         var i = $(this).index();
-         if(!$(this).hasClass('active')){
-             $(this).addClass('active').siblings().removeClass('active');
-             $('.tb-cont list').eq(i).show().siblings().hide();
-         }
-     });
-//
-//    $('.tool a').on('mousedown', function (e) {
-//        console.log(e);
-//        var sx = e.pageX;
-//        $(this).on('mousemove', function (e) {
-//            if (Math.abs(e.pageX - sx) < 15) {
-//                $(this).css("transform", "translateX(" + (e.pageX - sx) + "px)");
-//            }
-//        });
-//        $(this).on('mouseup', function (e) {
-//            $(this).css("transform", "translateX(0px)");
-//        });
-//    })
+
+    $('.tabs li').click(function () {
+        var i = $(this).index();
+        if (!$(this).hasClass('active')) {
+            $(this).addClass('active').siblings().removeClass('active');
+            $('.tb-cont list').eq(i).show().siblings().hide();
+        }
+    });
+
+    $('.msbtn').click(function () {
+        if (!$(this).hasClass('active')) {
+            $('.mesfrom').stop().fadeIn();
+        }
+    });
+
+    $('.closeMes').click(function () {
+        $('.mesfrom').stop().fadeOut();
+    });
+
+
+    function AutoZoom() {
+        var OriWidth = 1680; //��ԭ����
+        var NowWidth = $(window).width();
+        if (NowWidth < OriWidth) {
+            $("html").css("zoom", NowWidth / OriWidth);
+        } else {
+            $("html").css("zoom", 1);
+        }
+        //console.log(NowWidth);
+    }
+
+    function isMobile() {
+        var c = window.location.hash;
+        if (!c.match("fromapp")) {
+            if ((navigator.userAgent.match(/(iPhone|iPod|Android|ios)/i))) {
+                return true;
+            }
+            return false;
+        }
+    }
+    if (!isMobile()) {
+        AutoZoom();
+        $(window).resize(function () {
+            AutoZoom();
+        });
+    }
+
+
+    //
+    //    $('.tool a').on('mousedown', function (e) {
+    //        console.log(e);
+    //        var sx = e.pageX;
+    //        $(this).on('mousemove', function (e) {
+    //            if (Math.abs(e.pageX - sx) < 15) {
+    //                $(this).css("transform", "translateX(" + (e.pageX - sx) + "px)");
+    //            }
+    //        });
+    //        $(this).on('mouseup', function (e) {
+    //            $(this).css("transform", "translateX(0px)");
+    //        });
+    //    })
 }(jQuery);

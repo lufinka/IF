@@ -1,5 +1,5 @@
-.intro{
-    .introbg{
+.intro {
+    .introbg {
         height: 946px;
         background-image: url(/images/intro.png);
         background-repeat: no-repeat;
@@ -7,37 +7,52 @@
     }
 }
 
-.bmenu{
+.bmenu {
     padding-top: 80px;
-    h2{
+
+    h2 {
         font-size: 56px;
         text-align: center;
         color: #fff;
     }
-    .cont{
+
+    .cont {
         padding-top: 135px;
-        width: 800px;
-        margin: 0 auto;
-        ul{
-            width: 100%;
+        width: 100%;
+        text-align: center;
+
+        .box {
+            display: inline-block;
+        }
+
+        ul {
             text-align: center;
         }
-        li{
+
+        li {
             font-size: 28px;
             padding: 0 40px;
             display: inline-block;
-            a{
+
+            a {
                 height: 48px;
                 line-height: 48px;
                 color: #fff;
-                transition:  all .218s;
+                transition: all .218s;
                 display: block;
-                &:hover,&.active{
+
+                &:hover,
+                &.active {
                     border-bottom: 2px solid #fff;
                 }
             }
         }
-        .loginacCount{
+
+        .llink {
+            padding: 0 40px;
+        }
+
+        .loginacCount {
             margin-top: 135px;
             width: 100%;
             height: 100px;
@@ -52,6 +67,242 @@
     }
 }
 
+.about {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding-top: 75px;
+    text-align: center;
+
+    h2 {
+        font-size: 36px;
+        color: #333;
+        padding-bottom: 40px;
+        font-family: 'mediumed';
+    }
+
+    p {
+        padding-bottom: 50px;
+        font-size: 24px;
+        color: #666;
+        text-align: left;
+    }
+}
+
+.account {
+    width: 100%;
+    background-color: #000;
+    min-height: 412px;
+    background-image: url(/images/account.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    color: #fff;
+
+    .cont {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding-top: 112px;
+    }
+
+    p {
+        font-size: 26px;
+        line-height: 40px;
+    }
+
+    .pull-left {
+        a {
+            width: 300px;
+            height: 76px;
+            margin-bottom: 40px;
+            display: inline-block;
+            border-radius: 76px;
+            color: #333;
+            font-size: 28px;
+            line-height: 76px;
+            background-color: #fff;
+            transition: all .218s;
+
+            &:hover {
+                background-color: #fc2235;
+                color: #fff;
+            }
+        }
+
+    }
+
+    .pull-right {
+        a {
+            width: 296px;
+            height: 72px;
+            margin-bottom: 40px;
+            border: 2px solid #fff;
+            display: inline-block;
+            border-radius: 72px;
+            color: #fff;
+            font-size: 28px;
+            line-height: 72px;
+            transition: all .218s;
+
+            &:hover {
+                border-color: #fff;
+                background-color: #fff;
+                color: #333;
+            }
+        }
+    }
+}
+
+.message {
+    .msbtn {
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+        border-radius: 8px;
+        width: 80px;
+        height: 80px;
+        background-image: url(/images/message.gif);
+        background-repeat: no-repeat;
+        background-position: center 7px;
+        background-color: #fff;
+        position: fixed;
+        right: 0;
+        z-index: 999999;
+        bottom: 80px;
+        text-align: center;
+
+        p {
+            padding-top: 60px;
+            font-size: 12px;
+            color: #666;
+        }
+    }
+
+    .mesfrom {
+        display: none;
+        padding-top: 18px;
+        height: 162px;
+        background: #fff;
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        box-shadow: 0 -1px 55px rgba(0, 0, 0, .1);
+
+        .cont {
+            max-width: 1660px;
+            margin: 0 auto;
+            font-size: 24px;
+            color: #999;
+
+            .form-group {
+                margin-bottom: 28px;
+
+                label {
+                    vertical-align: top;
+                    line-height: 54px;
+                    display: inline-block;
+                    width: 136px;
+                    text-indent: 20px;
+                    text-align: center;
+                }
+
+                textarea {
+                    width: 620px;
+                    height: 137px;
+                    border-radius: 2px;
+                    border: 2px solid #666;
+                }
+            }
+
+            input {
+                width: 220px;
+                height: 50px;
+                border-radius: 2px;
+                border: 2px solid #666;
+            }
+            .pull-right{
+                margin-right: 80px;
+                width: 40px;
+                .closeMes{
+                    width: 40px;
+                    height: 40px;
+                    float: left;
+                    background-image: url(/images/close.gif);
+                    background-repeat: no-repeat;
+                    cursor: pointer;
+                }
+                .submitMes{
+                    width: 40px;
+                    height: 40px;
+                    float: left;
+                    margin-top: 56px;
+                    background-image: url(/images/yes.gif);
+                    background-repeat: no-repeat;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
 @media (max-width: 767px) {
-    
+
+    .intro {
+        .introbg {
+            height: auto;
+        }
+    }
+
+    .bmenu {
+        padding-top: 140px;
+
+        h2 {
+            font-size: 46px;
+            text-align: center;
+            color: #fff;
+        }
+
+        .cont {
+            padding-top: 35px;
+            width: 100%;
+            text-align: center;
+
+            .box {
+                display: inline-block;
+            }
+
+            ul {
+                text-align: center;
+
+                li {
+                    font-size: 20px;
+                }
+            }
+
+            .llink {
+                padding: 0 20px;
+            }
+
+            .loginacCount {
+                margin-top: 85px;
+                margin-bottom: 40px;
+                width: 100%;
+                height: 60px;
+                font-size: 26px;
+                color: #333;
+                display: block;
+                text-align: center;
+                line-height: 60px;
+                background-color: #fff;
+                border-radius: 60px;
+            }
+        }
+    }
+
+    .about {
+        padding: 75px 10px 0;
+
+        p {
+            padding-bottom: 20px;
+            font-size: 16px;
+        }
+    }
 }

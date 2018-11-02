@@ -1423,7 +1423,7 @@ html
 }
 body
 {
-    font-family: 'light', 'Microsoft Yahei', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'SF Pro SC', 'HanHei SC', 'SF Pro Text', 'Myriad Set Pro', 'SF Pro Icons', 'PingFang SC', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
     font-size: 14px;
     line-height: 1.42857143;
 
@@ -7808,7 +7808,7 @@ button.close
 }
 .tooltip
 {
-    font-family: 'light', 'Microsoft Yahei', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'SF Pro SC', 'HanHei SC', 'SF Pro Text', 'Myriad Set Pro', 'SF Pro Icons', 'PingFang SC', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
     font-size: 12px;
     font-weight: normal;
     font-style: normal;
@@ -7964,7 +7964,7 @@ button.close
 }
 .popover
 {
-    font-family: 'light', 'Microsoft Yahei', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'SF Pro SC', 'HanHei SC', 'SF Pro Text', 'Myriad Set Pro', 'SF Pro Icons', 'PingFang SC', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
     font-size: 14px;
     font-weight: normal;
     font-style: normal;
@@ -9288,11 +9288,74 @@ ol
     -webkit-transform: translate3d(8px, 0, 0) rotate(-45deg) scale(.7, 1);
             transform: translate3d(8px, 0, 0) rotate(-45deg) scale(.7, 1);
 }
+html,
+body
+{
+    font-family: 'SF Pro SC', 'HanHei SC', 'SF Pro Text', 'Myriad Set Pro', 'SF Pro Icons', 'PingFang SC', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+    font-weight: 300;
+
+    position: relative;
+
+    background: #fff;
+
+    -webkit-font-smoothing: antialiased;
+}
+body
+{
+    margin: 0;
+}
+/*body{height: auto !important;}*/
+.mdl-layout__container
+{
+    /*height: auto !important;*/
+    position: relative;
+}
 @font-face
 {
-    font-family: light;
+    font-family: 'goodbook';
+    font-weight: normal;
+    font-style: normal;
 
-    src: url('/foots/PINGFANG-LIGHT.TTF');
+    src: url('/fonts/goodbook.eot');
+    src: url('/fonts/goodbook.eot?#iefix') format('embedded-opentype'), url('/fonts/goodbook.woff') format('woff'), url('/fonts/goodbook.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: 'goodlight';
+    font-weight: normal;
+    font-style: normal;
+
+    src: url('../resources/fonts/goodlight.eot');
+    src: url('/fonts/goodlight.eot?#iefix') format('embedded-opentype'), url('/fonts/goodlight.woff') format('woff'), url('/fonts/goodbook.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: 'Helvetica Neue';
+    font-weight: 300;
+
+    src: local('Helvetica Neue Light'), local('HelveticaNeue-Light'), url('/fonts/HelveticaNeue-Light.ttf') format('truetype'), url('/fonts/HelveticaNeue-Light.woff') format('woff');
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+{
+    font-family: 'Helvetica Neue', 'goodbook', 'Lucida Grande', 'Lucida Sans Unicode', Arial, Verdana, sans-serif;
+    font-weight: 300;
+
+    word-wrap: break-word;
+    word-break: break-all;
+}
+h3
+{
+    font-size: 32px;
+    font-weight: 400;
+}
+h5
+{
+    font-size: 18px;
 }
 .home .banner
 {
@@ -9392,10 +9455,14 @@ ol
     line-height: 42px;
 
     padding-top: 64px;
+
+    text-shadow: 1px 1px 45px;
 }
 .home .banner .chart li .data b
 {
     font-size: 35px;
+
+    text-shadow: none;
 }
 .home .banner .chart li .data i
 {
@@ -9404,6 +9471,8 @@ ol
     line-height: .2;
 
     float: right;
+
+    text-shadow: none;
 }
 .home .banner .chart li .data .pull-left
 {
